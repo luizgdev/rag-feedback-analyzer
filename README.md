@@ -64,6 +64,17 @@ rag-feedback-analyzer/
 └── README.md            # Project Documentation
 
 ```
+## 📊 Dataset & Privacy
+
+This project uses the **Comcast Telecom Consumer Complaints** dataset.
+
+* **Automatic Setup:** The `make ingest` command attempts to download the data automatically from a public mirror.
+* **Manual Setup (Fallback):** If the automatic download fails, you can manually download the dataset:
+    1.  Download the CSV from [Kaggle](https://www.kaggle.com/datasets/archaeocharlie/comcastcustomerservice) or [GitHub Mirror](https://github.com/Rahulkumarr2080/Comcast-Telecom-Consumer-Complaints/blob/master/Comcast_telecom_complaints_data.csv).
+    2.  Place the file inside the `data/raw/` folder.
+    3.  Run `make ingest` normally.
+
+*Note: No proprietary data is included in this repository to comply with privacy standards.*
 
 ## 🏃‍♂️ Getting Started
 
