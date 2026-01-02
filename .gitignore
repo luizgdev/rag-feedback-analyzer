@@ -3,6 +3,7 @@ data/
 data/raw/*
 data/processed/*
 !data/.gitkeep
+chroma_db_data/
 
 # Ignore Environment
 .env
