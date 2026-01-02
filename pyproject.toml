@@ -1,0 +1,38 @@
+[project]
+name = "rag-feedback-analyzer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Luiz Gustavo da Costa Gonçalves",email = "luizg.dev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langchain (>=1.2.0,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "langchain-google-genai (>=4.1.2,<5.0.0)",
+    "chromadb (>=1.4.0,<2.0.0)",
+    "sentence-transformers (>=5.2.0,<6.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "google-generativeai (>=0.8.6,<0.9.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "streamlit (>=1.52.2,<2.0.0)",
+    "kagglehub[pandas-datasets] (>=0.3.13,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "ruff (>=0.14.10,<0.15.0)"
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "-v"
+testpaths = ["tests"]
