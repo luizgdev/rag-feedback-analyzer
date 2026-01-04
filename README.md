@@ -8,6 +8,8 @@
 
 An enterprise-grade **Retrieval-Augmented Generation (RAG)** application designed to analyze customer complaints. By leveraging **Google Gemini** and **ChromaDB**, this tool enables Customer Experience (CX) teams to perform semantic searches over raw feedback data and generate insights grounded in actual ticket records.
 
+![RAG Example](docs/RAG.png)
+
 ## 🏗️ Architecture
 
 ```mermaid
